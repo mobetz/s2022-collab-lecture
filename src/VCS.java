@@ -118,18 +118,22 @@ public class VCS {
     }
 
 
+    public static void process_one_word(int next_number) {
+        if ( next_number% 3 == 0 && next_number % 5 == 0 ) {
+            System.out.println("FizzBuzz");
+        } else if ( next_number % 3 == 0 ) {
+            System.out.println("Fizz");
+        } else if ( next_number% 5 == 0 ) {
+            System.out.println("Buzz");
+        }  else {
+            System.out.println(next_number);
+        }
+    }
+
+
     public static void FizzBuzz(int count_to) {
         for ( int i=1; i<=count_to; i++) {
-
-            if ( i % 3 == 0 && i % 5 == 0 ) {
-                System.out.println("FizzBuzz");
-            } else if ( i % 3 == 0 ) {
-                System.out.println("Fizz");
-            } else if ( i % 5 == 0 ) {
-                System.out.println("Buzz");
-            }  else {
-                System.out.println(i);
-            }
+            process_one_word(i);
         }
     }
 
