@@ -133,6 +133,10 @@ public class VCS {
         Sometimes, you might have to make touch ups here when git can't figure out which copy of the code you want to
         use. However, everything looks good for us, so we're ready to commit!
 
+        Git is an invaluable tool for helping us keep track of the way our code has changed over time. We can even use
+        branches to carry out different 'experiments' on our code, and only keep those that work out!
+
+        Next class, we'll see how git also has useful features for letting multiple people work together.
           */
     }
 
