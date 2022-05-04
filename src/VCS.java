@@ -113,23 +113,34 @@ public class VCS {
         If we right click on the files on the right of the panel, we can compare the version from any commit to the
         current version of the file. (we can also do this with git diff -c <commit_id>.)
 
+        If we want to 'rewind' time, we are able to do that by 'checking out' to reload an earlier one of our save
+        point commits. We can do this by right clicking the commit we want in the log, or performing 'git checkout <id>'.
+
+        Before we do that, we should make sure we save everything we're working on right now to a commit!
           */
     }
 
 
-    public static void FizzBuzz(int count_to) {
+    public static String FizzBuzz(int count_to) {
+        String result = "";
         for ( int i=1; i<=count_to; i++) {
 
             if ( i % 3 == 0 ) {
-                System.out.println("Fizz");
+               result = result + "Fizz ";
             } else if ( i % 5 == 0 ) {
-                System.out.println("Buzz");
+                result = result + "Buzz ";
             } else if ( i % 3 == 0 && i % 5 == 0 ) {
-                System.out.println("FizzBuzz");
+                result = result + "FizzBuzz ";
             } else {
-                System.out.println(i);
+
+                result = result + i + " ";
             }
         }
+
+        return result;
     }
+
+
+
 
 }
