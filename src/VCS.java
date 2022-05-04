@@ -113,6 +113,7 @@ public class VCS {
         If we right click on the files on the right of the panel, we can compare the version from any commit to the
         current version of the file. (we can also do this with git diff -c <commit_id>.)
 
+
           */
     }
 
@@ -120,13 +121,13 @@ public class VCS {
     public static void FizzBuzz(int count_to) {
         for ( int i=1; i<=count_to; i++) {
 
-            if ( i % 3 == 0 ) {
+            if ( i % 3 == 0 && i % 5 == 0 ) {
+                System.out.println("FizzBuzz");
+            } else if ( i % 3 == 0 ) {
                 System.out.println("Fizz");
             } else if ( i % 5 == 0 ) {
                 System.out.println("Buzz");
-            } else if ( i % 3 == 0 && i % 5 == 0 ) {
-                System.out.println("FizzBuzz");
-            } else {
+            }  else {
                 System.out.println(i);
             }
         }
