@@ -113,6 +113,7 @@ public class VCS {
         If we right click on the files on the right of the panel, we can compare the version from any commit to the
         current version of the file. (we can also do this with git diff -c <commit_id>.)
 
+
         If we want to 'rewind' time, we are able to do that by 'checking out' to reload an earlier one of our save
         point commits. We can do this by right clicking the commit we want in the log, or performing 'git checkout <id>'.
 
@@ -131,28 +132,32 @@ public class VCS {
         The panes on the left and right show us both timelines, and the middle shows the final result.
         Sometimes, you might have to make touch ups here when git can't figure out which copy of the code you want to
         use. However, everything looks good for us, so we're ready to commit!
+
           */
     }
 
 
     public static String FizzBuzz(int count_to) {
         String result = "";
-        for ( int i=1; i<=count_to; i++) {
+        for (int i = 1; i <= count_to; i++) {
 
-            if ( i % 3 == 0 ) {
-               result = result + "Fizz ";
-            } else if ( i % 5 == 0 ) {
-                result = result + "Buzz ";
-            } else if ( i % 3 == 0 && i % 5 == 0 ) {
-                result = result + "FizzBuzz ";
-            } else {
-
-                result = result + i + " ";
-            }
+            result = result + process_one_word(i) + " ";
         }
-
         return result;
     }
+
+    public static String process_one_word(int next_number) {
+        if ( next_number% 3 == 0 && next_number % 5 == 0 ) {
+            return "FizzBuzz";
+        } else if ( next_number % 3 == 0 ) {
+            return "Fizz";
+        } else if ( next_number% 5 == 0 ) {
+            return "Buzz";
+        }  else {
+            return Integer.toString(next_number);
+        }
+    }
+
 
 
 
