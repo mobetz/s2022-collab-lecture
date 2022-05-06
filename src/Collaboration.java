@@ -37,6 +37,15 @@ public class Collaboration {
          we can do this by typing 'git remote add <name> <url>', or in IntelliJ, we can click the Git dropdown, select
          "Manage Remotes...", then click the + and set up our repository URL.
 
+        Once we've set up a remote branch, we're able to "push" our changes to the remote branch.
+        We can do this by typing "git push" on the command line, or navigating to a branch and clicking the "push" option.
+
+
+        We can see that only the branch we pushed is visible to github, and right now github has a linear view of our
+        history. However, every commit is visible, and we can see the whole history of our repository.
+
+         We can see that every time we commit, the changes don't make it to the server until we push again. In fact,
+        in our Log history, we can even see where the "remote" copy of master lives.
          */
 
     }
