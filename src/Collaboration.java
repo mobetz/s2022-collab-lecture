@@ -48,6 +48,10 @@ public class Collaboration {
         in our Log history, we can even see where the "remote" copy of master lives.
 
         We need to push again to make our changes appear.
+
+
+        When someone else makes a change and pushes it, this likewise won't automatically make that change appear on every
+        other computer that has cloned a repository.
          */
 
     }
