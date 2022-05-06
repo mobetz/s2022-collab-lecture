@@ -48,7 +48,11 @@ public class Collaboration {
         in our Log history, we can even see where the "remote" copy of master lives.
 
         We need to push again to make our changes appear.
+
          */
 
+        /*
+        When someone does make a change remotely, I need to "pull down" that change.
+         */
     }
 }
