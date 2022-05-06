@@ -46,6 +46,8 @@ public class Collaboration {
 
          We can see that every time we commit, the changes don't make it to the server until we push again. In fact,
         in our Log history, we can even see where the "remote" copy of master lives.
+
+        We need to push again to make our changes appear.
          */
 
     }
